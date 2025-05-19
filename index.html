@@ -25,8 +25,8 @@
             <section id="presentation">
                 <h1>Elodie Boweren</h1>
                 <p>Bonjour,<br><br>
-                Après un parcours varié (responsable export, service clients, traductrice français/anglais, property manager) dans plusieurs pays (France, UK, US, Australie) j’ai décidé de m’attaquer à l’informatique afin d’approfondir mes compétences dans ce domaine porteur, et de pouvoir appliquer mes connaissances à un domaine qui me tient à cœur.
-                <br><br>Actuellement en formation Bachelor IT à l’école de La Plateforme à Marseille, je recherche une alternance de 2 ans pour commencer en septembre 2025. N’hésitez pas à me contacter si ce que vous voyez vous plaît !
+                De l’export à l’informatique, en passant par la gestion de biens et la traduction, mon parcours m’a appris à m’adapter, apprendre vite et travailler sérieusement.
+                <br><br>Aujourd’hui, je me forme au développement logiciel pour créer des outils utiles et intelligents. Je cherche une alternance de 2 ans dès septembre 2025 : faites-moi signe si mon profil vous parle !
                 </p>
             </section>
 
@@ -96,10 +96,21 @@
                     <article id="sixth-project">
                         <div class="content">
                             <h3>Arduino</h3>
-                            <p>Travail individuel - Création d'un piano à 5 notes avec leds simultanées.
+                            <p>Travail individuel - Création d'un piano à 5 notes avec leds simultanées, langage C et C++.
                             </p>
-                            <img src="images/GIF/pokemon.gif" alt="Aperçu du projet 4">
-                        </div>
+                            <video width="580" height="360" autoplay loop muted playsinline></video>
+                            <button onclick="toggleMute()">Activer/Désactiver le son</button>
+                                <source src="images/total.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la lecture de vidéos.
+                                <script>
+                                    const video = document.getElementById('projet-video');
+                                
+                                    video.addEventListener('click', () => {
+                                        // Bascule le son
+                                        video.muted = !video.muted;
+                                    });
+                                </script>
+                            </div>
                     </article>
                 </div>
             </section>
